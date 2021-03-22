@@ -1,9 +1,9 @@
 pipeline {
     agent any
     stages {
-        stage('Spotbugs') {
+        stage('hello') {
             steps {
-                sh "./gradlew spotbugsMain"
+                sh echo "Hello World"
             }
         }
 
