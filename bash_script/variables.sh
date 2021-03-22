@@ -1,5 +1,10 @@
 export "TEST_LAUTHERBACH=TRUE"
+<<<<<<< HEAD
 export "TEST_CAN=TRUE"
 export "TEST_BOOTER=TRUE"
+=======
+export "TEST_CAN="
+export "TEST_BOOTLOADER=TRUE"
+>>>>>>> 555a15cc8e4720d3d7609d12ab2184fcf202ae1b
 export "TEST_BOOTMANAGER=TRUE"
 export "TEST_APPLICATION=FALSE"
