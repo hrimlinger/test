@@ -1,11 +1,14 @@
 pipeline {
     agent any
-
+    tools {
+        jdk 'JDK 1.7'
+    } 
     stages {
-        stage('Hello') {
+        stage('Spotbugs') {
             steps {
-                echo 'Hello World'
+                sh "./gradlew spotbugsMain"
             }
         }
+
     }
 }
