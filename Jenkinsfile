@@ -1,9 +1,6 @@
 pipeline {
     agent any
     stages {
-        stage('Checkout') {
-            git branch: 'develop', url: 'ssh://user@ip:29418/prj.git'
-        }
         stage('hello') {
             steps {
                 echo "Hello World"
