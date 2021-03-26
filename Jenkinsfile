@@ -9,6 +9,8 @@ pipeline {
                     archive : false,
                     dir : "python_script/*.*"
                 )
+                echo "zip ok"
+                archiveArtifacts artifacts : "health_test_bbp.zip" , fingerprint : true
             }
         }
 
