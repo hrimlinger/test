@@ -7,7 +7,7 @@ pipeline {
                 zip (
                     zipFile : "health_test_bbp.zip" ,
                     archive : false,
-                    dir : "/python_script",
+                    dir : "python_script",
                     glob: '**/*.*'
                 )
                 echo "zip ok"
