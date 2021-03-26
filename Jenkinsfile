@@ -1,11 +1,6 @@
 pipeline {
     agent any
     stages {
-        stage('Clean'){
-            steps{
-                cleanWs()
-            }
-        }
         stage('hello') {
             steps {
                 echo "Hello World"
@@ -16,6 +11,11 @@ pipeline {
                     glob: '**/*.*'
                 )
                 echo "zip ok"
+            }
+        }
+        stage('Clean'){
+            steps{
+                cleanWs()
             }
         }
 
