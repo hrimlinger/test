@@ -5,7 +5,7 @@ pipeline {
             steps {
                 echo "Hello World"
                 zip (
-                    zipFile : "health_test_bbp_6.zip" ,
+                    zipFile : "health_test_bbp.zip" ,
                     archive : false,
                     dir : 'python_script',
                     glob: '**/*.*'
